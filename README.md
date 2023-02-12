@@ -126,6 +126,19 @@ Our research code is released under the MIT license. See [LICENSE](LICENSE) for 
 
 This work was supported by Public-welfare Technology Application Research of Zhejiang Province in China under Grant LGG22F020032, and Key Research and Development Project of Zhejiang Province in China under Grant 2021C03137.
 
+Our implementation and experiments are built on top of open-source GitHub repositories. We thank all the authors who made their code public, which tremendously accelerates our project progress. If you find these works helpful, please consider citing them as well.
+
+[JiaweiShiCV/Amend-Representation-Module](https://github.com/JiaweiShiCV/Amend-Representation-Module) 
+
 ## Citation
 
 If you use this code for your research, please cite our paper POSTER V2: A simpler and stronger facial expression recognition network:
+
+```
+@article{mao2023poster,
+  title={POSTER V2: A simpler and stronger facial expression recognition network},
+  author={Mao, Jiawei and Xu, Rui and Yin, Xuesong and Chang, Yuanqi and Nie, Binling and Huang, Aibin},
+  journal={arXiv preprint arXiv:2301.12149},
+  year={2023}
+}
+```
