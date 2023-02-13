@@ -38,16 +38,19 @@ This demonstrates the effectiveness of our improvements.
 	<!-- START TABLE -->
 	<!-- TABLE HEADER -->
 	<th valign="bottom">pre-trained checkpoint</th>
-	<th valign="bottom">path</th>
+	<th valign="bottom">baidu disk</th>
 	<th valign="bottom">codes</th>
+	<th valign="bottom">google drive</th>
 	<!-- TABLE BODY -->
 	<tr><td align="left">ir50</td>
-	<td align="center"><a href="https://pan.baidu.com/s/1UPO8nYkr77AsJpMkyrt2ig">download</a></td>
+	<td align="center"><a href="https://pan.baidu.com/s/131P9WRQfppUtsrXv8M9RQg">download</a></td>
 	<th valign="bottom">(POST)</th>
+  	<td align="center"><a href="https://drive.google.com/file/d/17QAIPlpZUwkQzOTNiu-gUFLTqAxS-qHt/view?usp=sharing">download</a></td>
 	</tr>
 	<tr><td align="left">mobilefacenet</td>
-	<td align="center"><a href="https://pan.baidu.com/s/131P9WRQfppUtsrXv8M9RQg">download</a></td>
-	<th valign="bottom">(POST)</th></tr>
+	<td align="center"><a href="https://pan.baidu.com/s/1UPO8nYkr77AsJpMkyrt2ig">download</a></td>
+	<th valign="bottom">(POST)</th>
+  	<td align="center"><a href="https://drive.google.com/file/d/1SMYP5NDkmDE3eLlciN7Z4px-bvFEuHEX/view?usp=sharing">download</a></td>
 	</tbody></table>
 
 ### Checkpoints
@@ -58,26 +61,32 @@ The following table provides POSTER V2 checkpoints in each dataset.
 <!-- TABLE HEADER -->
 <th valign="bottom">dataset</th>
 <th valign="bottom">top-1 acc</th>
-<th valign="bottom">path</th>
+<th valign="bottom">baidu disk</th>
 <th valign="bottom">codes</th>
+<th valign="bottom">google drive</th>
 <!-- TABLE BODY -->
 <tr><td align="left">RAF-DB</td>
 <th valign="bottom">92.21</th>
 <td align="center"><a href="https://pan.baidu.com/s/1jYmrHpwoX9zAvWf3CrdIpQ">download</a></td>
 <th valign="bottom">(POST)</th>
+<td align="center"><a href="https://drive.google.com/file/d/1aVm_hmJyZ5E_0p25XTbm3X9ophsKqCxv/view?usp=sharing">download</a></td>
 <tr><td align="left">AffectNet (7 cls)</td>
 <th valign="bottom">67.49</th>
 <td align="center"><a href="https://pan.baidu.com/s/1fRVaiHekZxJHgPSMB5FyLA">download</a></td>
 <th valign="bottom">(POST)</th>
+<td align="center"><a href="https://drive.google.com/file/d/1c_gp5UdlcMjIB2dZtdhXFfHOQg1OqU-D/view?usp=sharing">download</a></td>
 <tr><td align="left">AffectNet (8 cls)</td>
 <th valign="bottom">63.77</th>
 <td align="center"><a href="https://pan.baidu.com/s/1J9ijbVp1qr74EF1yvW6Umg">download</a></td>
 <th valign="bottom">(POST)</th>
+<td align="center"><a href="https://drive.google.com/file/d/1tdYH12vgWnIWfupuBkP3jmWS0pJtDxvh/view?usp=sharing">download</a></td>
 <tr><td align="left">CAER-S</td>
 <th valign="bottom">93.00</th>
 <td align="center"><a href="https://pan.baidu.com/s/1-iT1gLEN-5YrYRB0-V0e6w">download</a></td>
 <th valign="bottom">(POST)</th>
+<td align="center"><a href="https://drive.google.com/file/d/1Q7RDJxVPTkDH2rlhiAiOpSbIo1wUOqPv/view?usp=sharing">download</a></td>
 </tbody></table>
+
 
 ### Test
 
