@@ -1,5 +1,7 @@
 # POSTER V2: A simpler and stronger facial expression recognition network 
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/poster-v2-a-simpler-and-stronger-facial/facial-expression-recognition-on-affectnet)](https://paperswithcode.com/sota/facial-expression-recognition-on-affectnet?p=poster-v2-a-simpler-and-stronger-facial)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/poster-v2-a-simpler-and-stronger-facial/facial-expression-recognition-on-raf-db)](https://paperswithcode.com/sota/facial-expression-recognition-on-raf-db?p=poster-v2-a-simpler-and-stronger-facial)
 ![fig1](./figures/fig1.png)
 
 Facial expression recognition (FER) plays an important role in a variety of real-world applications such as human-computer interaction. 
