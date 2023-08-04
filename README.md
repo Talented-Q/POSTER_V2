@@ -17,7 +17,8 @@ For example, POSTER V2 reached 92.21% on RAF-DB, 67.49% on AffectNet (7 cls) and
 This demonstrates the effectiveness of our improvements. 
 ### Preparation
 - Preparing Data
-  
+- 
+Download the dataset and pretrained model from [baidu disk](https://pan.baidu.com/s/1OF6ldYQXpCaAyj9WyTF5Mg?pwd=POST).
   As an example, assume we wish to run RAF-DB. We need to make sure it have a structure like following:
 
 	```
