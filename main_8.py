@@ -18,6 +18,7 @@ import torchvision.datasets as datasets
 import torchvision.transforms as transforms
 import numpy as np
 import datetime
+from torchsampler import ImbalancedDatasetSampler
 
 from models.PosterV2_8cls import *
 
@@ -95,13 +96,28 @@ def main():
 
     valdir = os.path.join(args.data, 'test')
 
-    train_dataset = datasets.ImageFolder(traindir,
-                                         transforms.Compose([transforms.Resize((224, 224)),
-                                                             transforms.RandomHorizontalFlip(),
-                                                             transforms.ToTensor(),
-                                                             transforms.Normalize(mean=[0.485, 0.456, 0.406],
-                                                                                  std=[0.229, 0.224, 0.225]),
-                                                             transforms.RandomErasing(p=1, scale=(0.05, 0.05))]))
+    if args.evaluate is None:
+
+        train_dataset = datasets.ImageFolder(traindir,
+                                             transforms.Compose([transforms.Resize((224, 224)),
+                                                                 transforms.RandomHorizontalFlip(),
+                                                                 transforms.ToTensor(),
+                                                                 transforms.Normalize(mean=[0.485, 0.456, 0.406],
+                                                                                      std=[0.229, 0.224, 0.225]),
+                                                                 transforms.RandomErasing(p=1, scale=(0.05, 0.05))]))
+
+        train_loader = torch.utils.data.DataLoader(train_dataset,
+                                                   batch_size=args.batch_size,
+                                                   shuffle=True,
+                                                   num_workers=args.workers,
+                                                   pin_memory=True)
+
+        train_loader = torch.utils.data.DataLoader(train_dataset,
+                                                   sampler=ImbalancedDatasetSampler(train_dataset),
+                                                   batch_size=args.batch_size,
+                                                   shuffle=False,
+                                                   num_workers=args.workers,
+                                                   pin_memory=True)
 
     test_dataset = datasets.ImageFolder(valdir,
                                         transforms.Compose([transforms.Resize((224, 224)),
@@ -109,12 +125,6 @@ def main():
                                                             transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                                                                  std=[0.229, 0.224, 0.225]),
                                                             ]))
-
-    train_loader = torch.utils.data.DataLoader(train_dataset,
-                                               batch_size=args.batch_size,
-                                               shuffle=True,
-                                               num_workers=args.workers,
-                                               pin_memory=True)
 
     val_loader = torch.utils.data.DataLoader(test_dataset,
                                              batch_size=args.batch_size,
